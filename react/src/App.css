@@ -1,0 +1,205 @@
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #E3F6F5;
+  color: #3C3C3C;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.custom-navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #00C9A7;
+  padding: 15px 30px;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  animation: fadeInDown 0.6s ease-in-out;
+}
+
+.navbar-brand {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.navbar-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.navbar-link {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar-link:hover {
+  color: #0072F5;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  overflow: hidden;
+  width: 100vw;
+  box-sizing: border-box;
+}
+
+.form-card, .home-card {
+  background-color: #F4F4F4;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+  animation: fadeIn 1s ease-in-out;
+  box-sizing: border-box;
+}
+
+.form-title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #0072F5;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #3C3C3C;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: border-color 0.3s;
+  box-sizing: border-box;
+}
+
+input:focus {
+  border-color: #00C9A7;
+  outline: none;
+}
+
+button, .action-btn {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  background-color: #0072F5;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  box-sizing: border-box;
+}
+
+button:hover, .action-btn:hover {
+  background-color: #00C9A7;
+}
+
+.success-msg {
+  text-align: center;
+  color: #00C9A7;
+  font-size: 16px;
+  margin-bottom: 10px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.home-container {
+  padding: 40px;
+  background-color: #E3F6F5;
+  min-height: 100vh;
+  overflow-x: auto;
+  box-sizing: border-box;
+}
+
+.custom-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  display: block;
+  overflow-x: auto;
+  box-sizing: border-box;
+}
+
+.custom-table th,
+.custom-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+}
+
+.custom-table th {
+  background-color: #00C9A7;
+  color: white;
+}
+
+.custom-table tr:nth-child(even) {
+  background-color: #F4F4F4;
+}
+
+.custom-table tr:hover {
+  background-color: #E3F6F5;
+}
+
+.action-btn {
+  padding: 6px 12px;
+  margin: 0 4px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.edit-btn {
+  background-color: #0072F5;
+}
+
+.edit-btn:hover {
+  background-color: #00C9A7;
+}
+
+.delete-btn {
+  background-color: #3C3C3C;
+}
+
+.delete-btn:hover {
+  background-color: #00C9A7;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
